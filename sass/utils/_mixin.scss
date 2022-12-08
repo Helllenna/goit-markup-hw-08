@@ -1,3 +1,21 @@
 @mixin basis($line, $column) {
     flex-basis: calc((100% - ($line*var(--main-gap))) / $column);
 }
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;  
+    }
+}
+
+@mixin tablet  {
+    @media screen and (min-width: 768px) {
+        @content;  
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;  
+    }
+}

@@ -87,11 +87,27 @@ body {
 }
 
 .container {
+  width: 100%;
   box-sizing: border-box;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .modal__btn, .form__btn, .hero__btn {
@@ -320,36 +336,39 @@ body {
 }
 
 .business {
-  padding-top: 0;
+  display: none;
 }
 
-.business__item {
-  display: flex;
-  gap: var(--main-gap);
+@media screen and (min-width: 1200px) {
+  .business {
+    padding-top: 0;
+    display: block;
+  }
+  .business__item {
+    display: flex;
+    gap: var(--main-gap);
+  }
+  .business__thumb {
+    position: relative;
+  }
+  .business__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--seconder-text-color);
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-
-.business__thumb {
-  position: relative;
-}
-
-.business__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--seconder-text-color);
-  width: 100%;
-  height: 70px;
-  left: 0px;
-  bottom: 0px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(47, 48, 58, 0.8);
-}
-
 .team {
   background-color: var(--fourth-bg-color);
 }

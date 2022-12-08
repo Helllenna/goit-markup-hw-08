@@ -1,0 +1,25 @@
+.contact {
+    font-size: 14px;
+    transition: $transition-color;
+        &:hover,
+        &:focus,
+        &.current {
+            color: var(--main-btn-color);
+        }
+}
+
+.header__contact { 
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 1.1429;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.footer__contact {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 8px;
+}

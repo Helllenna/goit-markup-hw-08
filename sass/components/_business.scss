@@ -1,0 +1,31 @@
+.business { 
+  padding-top:0;
+}
+    
+.business__item {
+  display: flex;
+  gap:var(--main-gap);
+}
+    
+.business__thumb {
+  position: relative;
+}
+    
+.business__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--seconder-text-color);
+  width: 100%;
+  height: 70px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+    

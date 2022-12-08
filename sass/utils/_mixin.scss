@@ -1,0 +1,3 @@
+@mixin basis($line, $column) {
+    flex-basis: calc((100% - ($line*var(--main-gap))) / $column);
+}

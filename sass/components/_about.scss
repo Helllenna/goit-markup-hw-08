@@ -1,0 +1,32 @@
+.about__list { 
+  display: flex;
+  gap: var(--main-gap);
+}
+  
+.about-title__item {
+  color: var(--main-h-color);
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+  
+.about-title__text {
+  font-size: 14px;
+  line-height: 1.7143;
+}
+
+.about__logo-container {
+  background: var(--fourth-bg-color);
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  height: 120px;
+}
+  
+.about__logo {
+  box-sizing: content-box;
+  margin: auto;
+}

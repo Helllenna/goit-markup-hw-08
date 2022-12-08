@@ -1,0 +1,19 @@
+.logo { 
+    color: var(--main-btn-color); 
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+        &--blue { 
+            color: var(--seconder-btn-color)}
+        
+        &--white {
+            color: var(--fourth-btn-color);
+        }
+    }
+
+.header__logo-margin {
+    margin-right: 93px;
+}
+
+

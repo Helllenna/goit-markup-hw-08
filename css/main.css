@@ -206,6 +206,16 @@ body {
 .header__logo-margin {
   margin-right: 93px;
 }
+@media screen and (min-width: 768px) {
+  .header__logo-margin {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo-margin {
+    margin-right: 93px;
+  }
+}
 
 .contact {
   font-size: 14px;
@@ -222,6 +232,12 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-margin {
+    margin-bottom: 10px;
+  }
 }
 
 .footer__contact {
@@ -248,13 +264,26 @@ body {
   gap: 50px;
 }
 
-.header__container2,
+.header__container2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__container2 {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .header__container3 {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .header__container2,
-.header__container3 {
+  .header__container3 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container3 {
     display: flex;
     align-items: center;
   }
@@ -276,9 +305,16 @@ body {
   color: var(--main-btn-color);
 }
 
-.header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+@media screen and (min-width: 768px) {
+  .header__icon {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__icon {
+    margin-right: 10px;
+  }
 }
 
 .main-nav__link--current {

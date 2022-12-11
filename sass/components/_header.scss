@@ -17,13 +17,23 @@
     gap: 50px; 
 }
 
-.header__container2,
-.header__container3 {
+.header__container2 {
 display: none;
 @include tablet {
   display: flex;
   align-items: center;
 }
+}
+
+.header__container3 {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-nav { 
@@ -45,8 +55,13 @@ display: none;
 }
 
 .header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  @include tablet {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  @include desktop {
+    margin-right: 10px;
+  }
 }
 
 .main-nav__link--current { 

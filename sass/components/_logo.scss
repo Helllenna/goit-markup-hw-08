@@ -13,6 +13,12 @@
     }
 
 .header__logo-margin {
+    @include tablet {
+        margin-right: 87px;
+    }
+    @include desktop {
+        margin-right: 93px;
+    }
     margin-right: 93px;
 }
 

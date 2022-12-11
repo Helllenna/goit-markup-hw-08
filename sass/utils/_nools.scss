@@ -36,8 +36,12 @@ body {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
     
 .hide {
@@ -54,12 +58,18 @@ body {
     word-wrap: normal !important;
 }
 
-.title {  color: var(--main-h-color);
-    font-size: 36px;
-    line-height: 1.1667;
+.title {
+    color: var(--main-h-color);
+    font-size: 28px;
+    line-height: 1.1718;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.1667;
+        margin-bottom: 50px;
+    }
 }
     
 .is-hidden {

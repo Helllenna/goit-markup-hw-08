@@ -1,12 +1,11 @@
 .about__list { 
-  @include tablet {
     display: flex;
     gap: var(--main-gap);
     flex-wrap: wrap;
     }
-}
+
 .about__item {
-  margin-bottom: var(--main-gap);
+  @include basis(0, 1);
   @include tablet {
     @include basis(1, 2);
   }

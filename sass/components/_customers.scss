@@ -1,10 +1,17 @@
 .regular-customers__list {
   display: flex;
   gap: var(--main-gap);
+  flex-wrap: wrap;
 }
   
 .regular-customers__item {
-  @include basis(5, 6);
+  @include basis(0, 1);
+  @include tablet {
+    @include basis(1, 2);
+  }
+  @include desktop {
+    @include basis(5, 6);
+  }
 }
   
 .regular-customers__link {

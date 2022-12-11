@@ -239,6 +239,8 @@ body {
 .header__container {
   padding-top: 24px;
   padding-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .header__container3 {
@@ -246,11 +248,16 @@ body {
   gap: 50px;
 }
 
-.header__container,
 .header__container2,
 .header__container3 {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__container2,
+.header__container3 {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-nav {

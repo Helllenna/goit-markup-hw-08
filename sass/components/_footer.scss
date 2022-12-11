@@ -26,10 +26,18 @@
   padding-bottom: 60px;
 }
 
+.footer-tablet__container {
+  @include tablet {
+  display: flex;
+  align-items: baseline;
+
+  }
+}
 .footer-soc__margin {
 margin-top: 60px;
 @include tablet {
   margin-top: 0px;
+  margin-left: auto;
 }
   @include desktop {
     margin-left: 70px;
@@ -48,8 +56,10 @@ margin-top: 60px;
 
 .footer__container {
   text-align: center;
-  @include tablet {
+  
+  @include desktop {
     display: flex;    
     align-items: baseline;
-    }
+    text-align: left;
+  }
 }

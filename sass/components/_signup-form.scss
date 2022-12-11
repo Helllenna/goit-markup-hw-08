@@ -47,7 +47,10 @@
   border-radius: 4px;
   padding-left: 16px;
   color: var(--seconder-text-color);
-  @include desktop {
+  @include tablet {
+    width: 450px;
+  }
+    @include desktop {
     width: 358px;
     margin-bottom: 0px;
   }

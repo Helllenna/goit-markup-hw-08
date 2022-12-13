@@ -1,0 +1,21 @@
+.menu-open {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0px;
+        @include tablet {
+            display: none;
+        }
+}
+
+.menu-open__icon {
+    fill: var(--seconder-btn-color);
+}

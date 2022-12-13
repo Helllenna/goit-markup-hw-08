@@ -204,9 +204,6 @@ body {
   color: var(--fourth-btn-color);
 }
 
-.header__logo-margin {
-  margin-right: 93px;
-}
 @media screen and (min-width: 768px) {
   .header__logo-margin {
     margin-right: 87px;
@@ -254,10 +251,16 @@ body {
 }
 
 .header__container {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__container3 {
@@ -912,6 +915,30 @@ body {
 }
 .modal__input:focus + .modal__icon {
   fill: var(--main-btn-color);
+}
+
+.menu-open {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-open__icon {
+  fill: var(--seconder-btn-color);
 }
 
 .portfolio-list {

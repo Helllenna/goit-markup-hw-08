@@ -16,9 +16,6 @@
         }
 }
 
-.menu-open__btn {
-}
-
 .menu-close__btn {
     display: block;
     margin-left: auto;
@@ -49,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .menu-form__link {

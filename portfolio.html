@@ -42,7 +42,48 @@
                                 +38 096 111 11 11</a> 
                         </li>
                     </ul>
+                    <button type="button" class="menu-open__btn menu__btn" data-menu-open>
+                        <svg class="menu-open__icon" width="24" height="16">
+                            <use href="./images/icons.svg#icon-menu-open">
+                            </use>
+                        </svg>
+                    </button>
         </div>
+                <div class="menu-form is-hidden" data-menu>
+                    <div class="menu-container">
+                        <div>
+                            <ul class="menu-form__list">
+                                <li class="menu-form__item"><a class="menu-form__link" href="./index.html">Студія</a> </li>
+                                <li class="menu-form__item"><a class="menu-form__link main-nav__link" href="">Портфоліо</a> </li>
+                                <li class="menu-form__item"><a class="menu-form__link" href="">Контакти</a> </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="menu-form__contacts">
+                                <li><a class="menu-form__tel" href="tel:+380961111111">+38 096 111 11 11</a> 
+                                </li>
+                                <li><a class="menu-form__mail" href="mailto:info@devstudio.com">info@devstudio.com</a> 
+                                </li>
+                            </ul>
+                            <ul class="mob-soc__list">
+                                <li class="mob-soc__item"><a href="#" class="mob-soc__text after">Instagram</a>
+                                </li>
+                                <li class="mob-soc__item"><a href="#" class="mob-soc__text after">Twitter</a>
+                                </li>
+                                <li class="mob-soc__item"><a href="#" class="mob-soc__text after">Facebook</a>
+                                </li>
+                                <li class="mob-soc__item"><a href="#" class="mob-soc__text">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="menu-close__btn menu__btn" data-menu-close>
+                            <svg class="menu-close__icon" width="19" height="19">
+                                <use href="./images/icons.svg#icon-menu-close">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>    
     </header>
 <main>
     <section class="section portfolio">
@@ -251,5 +292,6 @@
             </form>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

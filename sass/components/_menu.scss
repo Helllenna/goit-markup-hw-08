@@ -19,6 +19,12 @@
 .menu-close__btn {
     display: block;
     margin-left: auto;
+    transition: $transition-bg;
+    &:hover,
+    &:focus,
+    &.current {
+        fill: #188CE8;
+    }
 }
 
 .menu-open__icon {
@@ -60,10 +66,10 @@
 .menu-form__item:not(:last-child) {
     margin-bottom: 32px;
 }
+
 .menu-form__list {
     padding-top: 48px;
 }
-
 
 .mob-soc__list {
     margin-top: 64px;
@@ -94,6 +100,7 @@
 }
 
 .mob-soc__text {
+    position: relative;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.222;
@@ -108,3 +115,13 @@
 .mob-soc__item:not(:last-child) {
     margin-right: 20px;
 }
+
+.after:after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        width: 0px;
+        height: 22px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+}
+

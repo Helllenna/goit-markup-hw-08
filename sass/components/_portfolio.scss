@@ -5,7 +5,14 @@
 }
   
 .pf-list {
-  @include basis(2, 3);
+  @include basis(0, 1);
+  @include tablet {
+    @include basis(1, 2);
+  }
+  @include desktop {
+    @include basis(2, 3);
+  }
+
 }
   
 .portfolio-list__item {

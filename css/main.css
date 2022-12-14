@@ -946,6 +946,10 @@ body {
 .menu-close__btn {
   display: block;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close__btn:hover, .menu-close__btn:focus, .menu-close__btn.current {
+  fill: #188CE8;
 }
 
 .menu-open__icon {
@@ -1022,6 +1026,7 @@ body {
 }
 
 .mob-soc__text {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
@@ -1037,6 +1042,15 @@ body {
   margin-right: 20px;
 }
 
+.after:after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  width: 0px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -1044,7 +1058,17 @@ body {
 }
 
 .pf-list {
-  flex-basis: calc((100% - 2 * var(--main-gap)) / 3);
+  flex-basis: calc((100% - 0 * var(--main-gap)) / 1);
+}
+@media screen and (min-width: 768px) {
+  .pf-list {
+    flex-basis: calc((100% - 1 * var(--main-gap)) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pf-list {
+    flex-basis: calc((100% - 2 * var(--main-gap)) / 3);
+  }
 }
 
 .portfolio-list__item {

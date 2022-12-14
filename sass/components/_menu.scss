@@ -32,6 +32,8 @@
     position: fixed;
     z-index: 1;
     top: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
     width: 100vw;
     height: 100vh;
     @include tablet {
@@ -42,6 +44,11 @@
 
 .menu-container {
     padding-left: 40px;
+    padding-bottom: 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu-form__link {
@@ -69,7 +76,7 @@
 }
 
 .menu-form__contacts {
-    margin-top: 302px;
+    margin-top: auto;
 }
 
 .menu-form__tel {

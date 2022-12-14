@@ -939,14 +939,30 @@ body {
   }
 }
 
+.menu-close__btn {
+  display: block;
+  margin-left: auto;
+}
+
 .menu-open__icon {
   fill: var(--seconder-btn-color);
 }
 
+.menu-form {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
 @media screen and (min-width: 768px) {
   .menu-form {
     display: none;
   }
+}
+
+.menu-container {
+  padding-left: 40px;
 }
 
 .menu-form__link {
@@ -957,8 +973,56 @@ body {
   color: var(--main-h-color);
 }
 
+.menu-form__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-form__list {
+  padding-top: 48px;
+}
+
+.mob-soc__list {
+  margin-top: 64px;
+}
+
+.menu-form__mail {
+  margin-top: 32px;
+}
+
+.menu-form__contacts {
+  margin-top: 302px;
+}
+
+.menu-form__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1765;
+  letter-spacing: 0.02em;
+  color: var(--main-btn-color);
+}
+
+.menu-form__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mob-soc__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: var(--main-btn-color);
+}
+
 .mob-soc__list {
   display: flex;
+}
+
+.mob-soc__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .portfolio-list {

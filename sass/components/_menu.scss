@@ -61,7 +61,18 @@
     line-height: 1.1765;
     letter-spacing: 0.02em;
     color: var(--main-h-color);
+    transition: $transition-color;
+    &:hover,
+    &k:focus,
+    &.current {
+        color: var(--main-btn-color);
+    }
+    &--current {
+        color: var(--main-btn-color);
+    }
 }
+
+
 
 .menu-form__item:not(:last-child) {
     margin-bottom: 32px;
@@ -117,11 +128,12 @@
 }
 
 .after:after {
-        content: "";
         position: absolute;
-        right: -10px;
-        width: 0px;
-        height: 22px;
+        content: "";
+        width: 22px;
+        height: 0px;
         border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        margin-top: 10px;
 }
 

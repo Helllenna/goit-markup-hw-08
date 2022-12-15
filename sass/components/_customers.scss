@@ -5,9 +5,9 @@
 }
   
 .regular-customers__item {
-  @include basis(0, 1);
+  @include basis(1, 2);
   @include tablet {
-    @include basis(1, 2);
+    @include basis(2, 3);
   }
   @include desktop {
     @include basis(5, 6);

@@ -532,7 +532,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__items {
-    flex-basis: calc((100% - 2 * var(--main-gap)) / 2);
+    flex-basis: calc((100% - 1 * var(--main-gap)) / 2);
   }
 }
 @media screen and (min-width: 1200px) {

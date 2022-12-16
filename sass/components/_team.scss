@@ -25,7 +25,7 @@
   border-radius: 0px 0px 4px 4px;
   @include basis(0,1);
   @include tablet {
-    @include basis(2, 2);
+    @include basis(1, 2);
   }
   @include desktop {
     @include basis(3, 4);

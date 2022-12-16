@@ -267,13 +267,13 @@ body {
 }
 
 .header__container {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 19px;
+    padding-bottom: 19px;
     display: flex;
     align-items: center;
   }
@@ -663,6 +663,7 @@ body {
   .footer-tablet__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -672,7 +673,6 @@ body {
 @media screen and (min-width: 768px) {
   .footer-soc__margin {
     margin-top: 0px;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {

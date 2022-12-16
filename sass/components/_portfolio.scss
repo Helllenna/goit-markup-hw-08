@@ -16,6 +16,9 @@
 }
   
 .portfolio-list__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: var(--main-bg-color);
   transition: $transition_box-shadow;
     &:hover,
@@ -25,6 +28,7 @@
   }
 
 .portfolio__border {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;

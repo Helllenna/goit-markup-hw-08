@@ -280,8 +280,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 

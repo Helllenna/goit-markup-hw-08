@@ -9,9 +9,10 @@
 }
   
 .modal {
-  width: 450px;
-  @include desktop {
-    width: 528px;
+  width: calc(100% - 30px);
+  max-width: 450px;
+@include desktop {
+  max-width: 528px;
   }
   background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -122,13 +123,17 @@
     margin-left: 13px;
   }
 }
+
+.modal__policy {
+  display: flex;
+  gap: 7px;
+}
   
 .modal__policy-text {
   font-size: 12px;
   line-height: calc(14.06 / 12);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  white-space: nowrap;
   @include desktop {
     font-size: 14px;
     line-height: 1.71;
@@ -146,6 +151,7 @@
       border: 2px solid #212121;
       border-radius: 2px;
       margin-right: 7px;
+      flex-shrink: 0;
       transition: $transition_border;
     }
     .modal__check:checked + &::before {

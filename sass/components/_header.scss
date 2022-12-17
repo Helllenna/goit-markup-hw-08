@@ -9,11 +9,15 @@
   padding-top: 14px;
   padding-bottom: 14px;
   @include tablet {
-  padding-top: 19px;
-  padding-bottom: 19px;
-  display: flex;
-  align-items: center;
-}
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+  }
+  @include desktop {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    }
 }
 
 .header__container3 {
